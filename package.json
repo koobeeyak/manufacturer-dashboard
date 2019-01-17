@@ -1,7 +1,7 @@
 {
   "name": "manufacturer-dashboard",
   "version": "0.1.0",
-  "proxy": "http://localhost:9000/",
+  "proxy": "http://50.17.146.56:9090/",
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
