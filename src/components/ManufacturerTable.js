@@ -1,14 +1,10 @@
 import React from 'react';
 
+import ManufacturerTableHeader from './ManufacturerTableHeader';
+
 const ManufacturerTable = ({ filteredManufacturer }) => (
   <table>
-    <tbody>
-      <tr>
-        <th>Id</th>
-        <th>Name</th>
-        <th>Short-Name</th>
-      </tr>
-    </tbody>
+    <ManufacturerTableHeader />
     {filteredManufacturer.map(m => (
       <tbody key={m.id}>
         <tr>
