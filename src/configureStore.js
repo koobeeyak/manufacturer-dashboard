@@ -2,9 +2,10 @@ import { createStore, applyMiddleware } from 'redux';
 import createSagaMiddleware from 'redux-saga';
 import { createLogger } from 'redux-logger';
 
-// import reducers from './reducers';
+import reducers from './reducers';
+import getManufacturersSaga from './sagas/getManufacturersSaga';
+import getBrandsSaga from './sagas/getBrandsSaga';
 
-// double check on imports working, you should never have to specify ./reducers/index
 const configureStore = () => {
   const sagaMiddleware = createSagaMiddleware();
   const middlewares = [sagaMiddleware];
@@ -13,7 +14,10 @@ const configureStore = () => {
     middlewares.push(createLogger());
   }
 
-  const store = createStore(() => {}, applyMiddleware(...middlewares));
+  const store = createStore(reducers, applyMiddleware(...middlewares));
+
+  sagaMiddleware.run(getManufacturersSaga);
+  sagaMiddleware.run(getBrandsSaga);
 
   return store;
 };
