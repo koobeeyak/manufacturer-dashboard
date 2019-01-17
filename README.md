@@ -8,4 +8,4 @@ The app's been left as-is in "development" config as the actions logged to conso
 
 To run the app, simply:
 
-`$ npm run start`
+`$ npm i;npm run start`
