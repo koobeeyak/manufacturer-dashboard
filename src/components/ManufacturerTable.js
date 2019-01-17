@@ -14,7 +14,7 @@ const ManufacturerTable = ({ filteredManufacturer }) => (
         </tr>
       </tbody>
     ))}
-    </table>
+  </table>
 );
 
 export default ManufacturerTable;

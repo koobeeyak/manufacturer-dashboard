@@ -8,12 +8,13 @@ class AppBody extends Component {
   componentDidMount() {
     this.props.fetchAPIData();
   }
+
   render() {
     return (
       <div>
-          <HeaderBanner />
-          <ManufacturerFilterInput />
-          <ManufacturerTable />
+        <HeaderBanner />
+        <ManufacturerFilterInput />
+        <ManufacturerTable />
       </div>
     );
   }
