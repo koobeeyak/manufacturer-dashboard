@@ -1,4 +1,20 @@
 @import './variables.scss';
 .App {
-  text-align: center;
+  text-align: left;
+  margin: 0 20px 0 20px;
+}
+
+.header-banner--blue {
+  background-color: $info-primary-color;
+  color: white;
+  width: 80%;
+  height: 40px;
+  padding: 8px;
+  margin: 10px 0 10px 0;
+  font-weight: 800
+}
+
+.manufacturer-filter__input {
+  width: 550px;
+  margin-bottom: 15px;
 }

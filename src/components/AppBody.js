@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import HeaderBanner from './HeaderBanner';
 import ManufacturerFilterInput from './ManufacturerFilterInput.container';
 import ManufacturerTable from './ManufacturerTable.container';
 
@@ -10,9 +11,7 @@ class AppBody extends Component {
   render() {
     return (
       <div>
-          <div>
-          Hello, AppBody
-          </div>
+          <HeaderBanner />
           <ManufacturerFilterInput />
           <ManufacturerTable />
       </div>
