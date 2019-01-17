@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import ManufacturerFilterInput from './ManufacturerFilterInput.container';
+import ManufacturerTable from './ManufacturerTable.container';
 
 class AppBody extends Component {
   componentDidMount() {
@@ -13,6 +14,7 @@ class AppBody extends Component {
           Hello, AppBody
           </div>
           <ManufacturerFilterInput />
+          <ManufacturerTable />
       </div>
     );
   }

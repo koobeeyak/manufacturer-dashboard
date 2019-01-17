@@ -1,4 +1,4 @@
-import { createSelector } from 'reselect'
+import { createSelector } from 'reselect';
 
 import {
   GET_MANUFACTURERS_REQUEST,
@@ -49,6 +49,6 @@ export const getManufacturersFilterSelector = ({ filter }) => filter;
 export const getFilteredManufacturerSelector = createSelector(
   [getManufacturersDataSelector, getManufacturersFilterSelector],
   (data, filter) => (filter
-    ? data
-    : data.filter(m => m.name === filter)),
+    ? data.filter(m => m.name === filter)
+    : data),
 );
